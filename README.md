@@ -4,6 +4,8 @@ Do you remember a time when you saw a great outcrop and told yourself I better r
 
 ## Design
 
+![Mock](startup_pg1.jpg)
+
 ## Key features
 
 ## Technologies
