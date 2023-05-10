@@ -3,12 +3,12 @@
 Do you remember a time when you saw an amazing geology feature and told yourself I better remeber this place, but then forgot it, or imagine you are on a road trip and want to see some amazing geological sites, but don't know where any are? TectoSlide allows you to create a marker on a map that represents the location of a geologic feature and a brief description that you can access whenever. That location is then visible to all others users on the website. At each marker created you can name it, write noticible features, and leave other notes for yourself or others. 
 
 ## Design
-
-![Mock](startup_pg1_small2.jpg)
-
-![Mock](startup_pg2_small2.jpg)
-
-![Mock](startup_pg3_small.jpg)
+### Login Page:
+![Mock](tecto1.jpg)
+### Main Page:
+![Mock](tecto2.jpg)
+### View Data Page:
+![Mock](tecto3.jpg)
 
 
 ## Key features
