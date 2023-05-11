@@ -36,6 +36,7 @@ Do you remember a time when you saw an amazing geology feature and told yourself
 For this deliverable I added the application structure.
 + **HTML pages**- I created four HTML Pages that represent login, map view, the ability for the user to create a marker, and the database visual.
 + **Links**- The login page links to the map page. The map page links to the marker page. The marker page temperarily links to the data page to display all the data inputed. 
++ **Image**- picture of a map on the map page
 + **Text**- Includes The Labels and Titles for each of the functions. The table contains temporary data to show the data that would be added from a marker. 
 + **Login**- Input box and submit box for login. 
 + **Database**- The Marker infor expamples is displayed in a table on the database page. 
