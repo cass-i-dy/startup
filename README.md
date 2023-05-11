@@ -32,11 +32,11 @@ Do you remember a time when you saw an amazing geology feature and told yourself
 + **WebSocket**- Will include weather services to help the user view the current temperature and weather conditions for the day. 
 + **React**- This will allow for the site to use the react web framework. 
 
-##HTML Deliverables
+## HTML Deliverables
 For this deliverable I added the application structure.
-+ **HTML pages**- I created four HTML Page that represent login, map view, the ability for the user to create a marker, and the database visual.
-+ **Links**- The login page links to the map page, The map page links to the marker page, and the marker page temperarily links to the data page to display all the data inputed. 
-+ **Text**- Includes The Labels and Titles for each of the functions. The Table contains temporary data to show the data that would be added from a marker. 
++ **HTML pages**- I created four HTML Pages that represent login, map view, the ability for the user to create a marker, and the database visual.
++ **Links**- The login page links to the map page. The map page links to the marker page. The marker page temperarily links to the data page to display all the data inputed. 
++ **Text**- Includes The Labels and Titles for each of the functions. The table contains temporary data to show the data that would be added from a marker. 
 + **Login**- Input box and submit box for login. 
 + **Database**- The Marker infor expamples is displayed in a table on the database page. 
 + **WebSocket**- Created a tempory Websocket holder displayed as Weather (in text form) to show where the WebSocket will be. 
