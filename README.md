@@ -41,3 +41,11 @@ For this deliverable I added the application structure.
 + **Login**- Input box and submit box for login. 
 + **Database**- The Marker infor expamples is displayed in a table on the database page. 
 + **WebSocket**- Created a tempory Websocket holder displayed as Weather (in text form) to show where the WebSocket will be. 
+
+## CSS Deliverables
++ **Header, footer, and main content body**-
++ **Navigation elements**-
++ **Responsive to window resizing**-
++ **Application elments**- 
++ **Application text content**- 
++ **Application images**- 
