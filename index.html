@@ -6,14 +6,14 @@
         <meta charset="UTF-8">
         <title>TectoSlide</title>
         <p>Today's Weather</p>
+        <link rel="stylesheet" href="main.css">
     </head>
 
     <body>
         <header>
-        <h1>TectoSlide</h1>
         <nav>
             <menu>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">TectoSlide</a></li>
                 <li><a href="map.html">Map</a></li>
                 <li><a href="alldata.html">Data</a></li>
                 <li><a href="about.html">About Info</a></li>
@@ -23,12 +23,22 @@
     </header>
 
     <main>
-        <h1>Welcome!</h1>
-        <p>Login to access Map!</p>
+        <h3>TectoSlide</h3>
         <form method="get" action="map.html">
-            <label for="name">Username</label>
-            <input type="text" id="name" placeholder="Your username" />
-            <button type="submit">Login</button>
+            <p>Please Login to Access Map!</p>
+            <ul style= "list-style: none;">
+                <li>
+                    <label for="name">Username</label>
+                    <input type="text" id="name" placeholder="Your username" />
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="text" id="password" placeholder="Password" />
+                </li>
+                <li>
+                    <button type="submit">Login</button>
+                </li>
+            </ul>
         </form>
     </main>
 
