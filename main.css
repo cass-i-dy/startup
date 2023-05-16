@@ -21,7 +21,7 @@ menu {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: rgba(13, 13, 13, 0.74);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -55,15 +55,16 @@ form {
     padding-right: 30px;
     padding-bottom: 5px;
     border-radius: 15px;
+    margin: 20px;
     
 }
 
-form::before {
-    opacity: 0.5;
-}
 
 button {
     margin: 20px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 h3 {
@@ -97,13 +98,14 @@ button{
 
 footer {
     flex: 0 30px;
-    background-color: black;
+    background-color: rgba(13, 13, 13, 0.74);
     padding: 10px;
 }
    
   footer a {
     float: right;
     color: white;
+    text-decoration: none;
   }
   
   @media (max-height: 600px) {
