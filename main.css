@@ -72,8 +72,9 @@ h3 {
     font-weight: bold;
     color: white;
     background-color: rgba(54, 54, 54, 0.5);
-    padding-left: 100%;
-    padding-right: 100%;
+    width: 100%;
+    text-align: center;
+
 }
 
 p {
