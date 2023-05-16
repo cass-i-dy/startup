@@ -43,9 +43,9 @@ For this deliverable I added the application structure.
 + **WebSocket**- Created a tempory Websocket holder displayed as Weather (in text form) to show where the WebSocket will be. 
 
 ## CSS Deliverables
-+ **Header, footer, and main content body**-
-+ **Navigation elements**-
-+ **Responsive to window resizing**-
-+ **Application elments**- 
-+ **Application text content**- 
-+ **Application images**- 
++ **Header, footer, and main content body**- Inputed a Header menu and footer and main content body all with working links for each of the pages. 
++ **Navigation elements**- Edited the text so that underlines don't appear on text and changed color of the text and created a header bar. 
++ **Responsive to window resizing**- Fixed windows so it looks good on all devices and any size.
++ **Application elments**- Made sure there was spacing and that it was centered on the page. 
++ **Application text content**- Consistent fonts, edited size as needed. 
++ **Application images**- Added background images to the background for style. Map Image on the map page is a place holder for an interactive map. I did center the picture. 
