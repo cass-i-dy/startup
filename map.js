@@ -2,15 +2,19 @@
 
 // get location place holder
 
-    // let map;
+    let map;
 
 // Here is where to implement map once created
 
-    // function initialize_map() {}
+    function initialize_map() {
+        map = google_map
+        const location_marker = get_location
+    };
 
-    // function get_location() {}
+    function get_location() {
+    const center_map = center;
+    
+    localStorage.setItem("user_location", current_location)
 
-
-    // localStorage.setItem("user_location", current_location)
-
-    // console.log("Location saved:", current_location)
+    console.log("Location saved:", current_location)
+    };
