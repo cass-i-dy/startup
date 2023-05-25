@@ -25,9 +25,5 @@
         const playerNameEl = document.getElementById("user_name");
         const storedUserName = localStorage.getItem("userName");
 
-        if (storedUserName) {
             playerNameEl.textContent = storedUserName;
-        } else {
-            playerNameEl.textContent = "Guest";
-        }
     });
