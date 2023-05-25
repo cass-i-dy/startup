@@ -7,6 +7,7 @@
         <title>TectoSlide</title>
         <p1>Today's Weather</p1>      
         <link rel="stylesheet" href="marker.css">
+        <script src="marker.js"></script>
 
     </head>
 
@@ -25,7 +26,7 @@
 
     <main>
      <p>Create Marker</p>
-     <form action="alldata.html" method="get">
+     <form action="map.html" method="get">
             
                 <label for="location">Location Name:</label>
                 <input id="location" placeholder="Enter A Descriptive Name"> 
@@ -33,7 +34,7 @@
                 <input id="features">
                 <label for="notes">Additional Notes: </label>
                 <textarea id="notes"></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick=location_information()>Submit</button>
      </form>
     </main>
 
