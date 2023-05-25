@@ -18,3 +18,16 @@
 
     console.log("Location saved:", current_location)
     };
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {  
+        const playerNameEl = document.getElementById("user_name");
+        const storedUserName = localStorage.getItem("userName");
+
+        if (storedUserName) {
+            playerNameEl.textContent = storedUserName;
+        } else {
+            playerNameEl.textContent = "Guest";
+        }
+    });

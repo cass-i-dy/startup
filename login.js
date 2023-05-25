@@ -1,6 +1,6 @@
 function login() {
-    const name = document.querySelector("#name");
-    localStorage.setItem("userName", name.value);
+    const nameEl = document.querySelector("#name");
+    localStorage.setItem("userName", nameEl.value);
     window.location.href = "map.html";
   }
   
