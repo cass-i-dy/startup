@@ -49,3 +49,10 @@ For this deliverable I added the application structure.
 + **Application elments**- Made sure there was spacing and that it was centered on the page. 
 + **Application text content**- Consistent fonts, edited size as needed. 
 + **Application images**- Added background images to the background for style. Map Image on the map page is a place holder for an interactive map. I did center the picture. 
+
+## JavaScript deliverable
+For this deliverable I made my application track and display the user and their comments. 
++ **login**- Tracks the User's given Username and takes you to the map page.
++ **database**- Displays User's info given of the geologic data on the alldata page. It is being stored on the local storage, but eventually it will be replaced with the database data.
++ **WebSocket**-
++ **application logic**- There is a place holder for the Google API where a location will be taken and then added to the info of the user. It allows for user input and keeps track of the data. 
