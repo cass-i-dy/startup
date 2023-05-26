@@ -5,10 +5,12 @@ function location_information() {
     const featureNameEl = document.querySelector("#features");
     const infoNameEl = document.querySelector("#notes");
     const userNameEl = localStorage.getItem('userName');
+    const dateNameEl = document.querySelector("#date");
 
     localStorage.setItem("locationName", locationNameEl.value);
     localStorage.setItem("featureName", featureNameEl.value);
     localStorage.setItem("infoName", infoNameEl.value);
+    localStorage.setItem("dateName", dateNameEl.value);
 
     let infos = [];
     const infosText = localStorage.getItem('infos');
@@ -20,7 +22,8 @@ function location_information() {
         location: locationNameEl.value,
         features: featureNameEl.value,
         notes: infoNameEl.value,
-        user: userNameEl.value
+        user: userNameEl.value,
+        date: dateNameEl.value
     };
 
     infos.push(newInfo);
