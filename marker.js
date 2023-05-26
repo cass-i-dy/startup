@@ -12,6 +12,7 @@ function location_information() {
     const infoNameEl = document.querySelector("#notes");
     const userNameEl = localStorage.getItem("userName");
     const dateNameEl = document.querySelector("#date");
+    // const mapLocationNameEl = document.getItem("userLocation")
 
     localStorage.setItem("locationName", locationNameEl.value);
     localStorage.setItem("featureName", featureNameEl.value);
@@ -29,7 +30,8 @@ function location_information() {
         features: featureNameEl.value,
         notes: infoNameEl.value,
         user: userNameEl,
-        date: dateNameEl.value
+        date: dateNameEl.value,
+        // map_location: mapLocationNameEl
     };
 
     infos.push(newInfo);
