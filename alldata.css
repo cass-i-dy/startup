@@ -112,3 +112,10 @@ footer {
       flex: 1 100vh;
     }
   }
+
+  .anyweather {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+  }
+  
