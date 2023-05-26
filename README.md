@@ -54,5 +54,5 @@ For this deliverable I added the application structure.
 For this deliverable I made my application track and display the user and their comments. 
 + **login**- Tracks the User's given Username and takes you to the map page.
 + **database**- Displays User's info given of the geologic data on the alldata page. It is being stored on the local storage, but eventually it will be replaced with the database data.
-+ **WebSocket**-
++ **WebSocket**- Created a seperate websocket JS where it uses setIterval to Iterate through a list of different weather. This demonstrates it updating the future weather websocket.
 + **application logic**- There is a place holder for the Google API where a location will be taken and then added to the info of the user. It allows for user input and keeps track of the data. 
