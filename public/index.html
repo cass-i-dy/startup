@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>TectoSlide</title>
+        <p class="anyweather" id="w"></p>
+        <link rel="stylesheet" href="main.css">
+        <script src="web_socket.js"></script>
+        <script src="login.js"></script>
+    </head>
+
+    <body>
+        <header>
+        <nav>
+            <menu>
+                <li><a href="index.html">TectoSlide</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="alldata.html">Data</a></li>
+                <li><a href="about.html">About Info</a></li>
+            </menu>
+        </nav>
+        <hr />
+    </header>
+
+    <main>
+        <h3>TectoSlide</h3>
+        <form method="get" action="map.html">
+            <p>Please Login to Access Map!</p>  
+            <label for="name">Username</label>
+            <input type="text" id="name" placeholder="Your username" />
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Password" />
+            <button onclick="login()" type="submit">Login</button>
+
+        
+        </form>
+    </main>
+
+    <footer>
+        <hr />
+        <a href="https://github.com/cass-i-dy/startup/tree/main">Github</a>
+    </footer>
+    </body>
+
+</html>
