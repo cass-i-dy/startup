@@ -16,6 +16,10 @@ apiRouter.get('/test',(req, res) => {
     res.send("Hello")
 })
 
+apiRouter.get('/data',(req, res) => {
+    res.send("Data")
+})
+
 app.use((_req, res) => {
     res.sendFile('index.html', { root: 'public' });
   });

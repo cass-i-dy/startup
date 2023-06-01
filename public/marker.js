@@ -6,7 +6,7 @@
 
 //             playerNameEl.textContent = storedUserName;
 
-function location_information() {
+async function location_information() {
     const locationNameEl = document.querySelector("#location");
     const featureNameEl = document.querySelector("#features");
     const infoNameEl = document.querySelector("#notes");
@@ -18,6 +18,10 @@ function location_information() {
     localStorage.setItem("featureName", featureNameEl.value);
     localStorage.setItem("infoName", infoNameEl.value);
     localStorage.setItem("dateName", dateNameEl.value);
+
+    const response = await fetch("/api/data")
+    const temp = await response.json()
+    console.log(temp)
 
     let infos = [];
     const infosText = localStorage.getItem('infos');
