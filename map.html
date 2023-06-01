@@ -7,6 +7,7 @@
         <p class="anyweather" id="w"></p>
         <script src="web_socket.js"></script>
         <link rel="stylesheet" href="map.css">
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-vfAkO7BPXdUs_xRt_DSfhqnonBSLuI"></script> -->
     </head>
 
     <body>
@@ -27,7 +28,12 @@
         <span id="user_name"></span>
         <p>Google API will be where the picture is</p>
         <!-- <script src="google map key to be created..."></script> -->
-        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ybGQlMjBtYXB8ZW58MHx8MHx8&auto" alt="Map" width="700" height = "400" class="center">
+        <!-- <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ybGQlMjBtYXB8ZW58MHx8MHx8&auto" alt="Map" width="700" height = "400" class="center"> -->
+        <div id="map" style="width: 100%; height: 400px;"></div>
+        <script> window.onload = function () {
+            initialize_map();
+        };
+        </script>
         <form method="get" action="marker.html">
             <button type="submit" id="map_location">Create Marker</button>
         </form>
@@ -37,5 +43,6 @@
         <a href="https://github.com/cass-i-dy/startup/tree/main">Github</a>
     </footer>
     <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-vfAkO7BPXdUs_xRt_DSfhqnonBSLuI"></script>
     </body>
 </html>

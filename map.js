@@ -2,26 +2,28 @@
 
 // get location place holder
 
-    let map;
+    // let map;
 
 // Here is where to implement map once created
 
     function initialize_map() {
-        map = google_map // initializing  the map will go here
-        const location_marker = get_location
-
+        // map = google_map // initializing  the map will go here
+        // const location_marker = get_location
+        var map = new google.maps.Map(document.getElementById('map'), {center: {lat:37.7749, lng: -122.4194 }, zoom: 12
+    });
+}
 
         // start save location once buttong clicked to get location
-        const saveButton = document.getElementById("map_location");
-        saveButton.addEventListener("submit", get_location)
-    };
-
-    function get_location() {
-    const center_map = center; // get the center of the map as the location
+    //     const saveButton = document.getElementById("map_location");
+    //     saveButton.addEventListener("submit", get_location)
     
-    localStorage.setItem("userLocation", current_map) // save the location longitude and latitude to the local storage
 
-    };
+    // function get_location() {
+    // const center_map = center; // get the center of the map as the location
+    
+    // localStorage.setItem("userLocation", current_map) // save the location longitude and latitude to the local storage
+
+    // };
 
 
 
