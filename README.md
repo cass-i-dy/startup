@@ -56,3 +56,11 @@ For this deliverable I made my application track and display the user and their 
 + **database**- Displays User's info given of the geologic data on the alldata page. It is being stored on the local storage, but eventually it will be replaced with the database data.
 + **WebSocket**- Created a seperate websocket JS where it uses setIterval to Iterate through a list of different weather. This demonstrates it updating the future weather websocket.
 + **application logic**- There is a place holder for the Google API where a location will be taken and then added to the info of the user. It allows for user input and keeps track of the data. 
+
+## Service Deliverable
+For this deliverable I created an HTTP service to host my frontend and provide backend endpoints. 
++**Node.js/Express HTTP service**- done! As seen in the newly created folders.
++**Static middleware for frontend**- done! Can run through local host and corresponding port.
++**Calls to third party endpoints**- Does this through Google map API and through quotes on the about page.
++**Backend service endpoints**- Placeholders for login that stores the current user on the server.
++**Frontend calls service endpoints**- Did this through the fetch function. 
