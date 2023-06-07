@@ -12,16 +12,18 @@ async function location_information() {
     const infoNameEl = document.querySelector("#notes");
     const userNameEl = localStorage.getItem("userName");
     const dateNameEl = document.querySelector("#date");
-    // const mapLocationNameEl = document.getItem("userLocation")
+    const mapLatEl = localStorage.getItem("latitude");
+    const mapLonEl = localStorage.getItem("longitude")
 
     localStorage.setItem("locationName", locationNameEl.value);
     localStorage.setItem("featureName", featureNameEl.value);
     localStorage.setItem("infoName", infoNameEl.value);
     localStorage.setItem("dateName", dateNameEl.value);
 
+  
     const response = await fetch("/api/data")
-    const temp = await response.json()
-    console.log(temp)
+    // const temp = await response.json()
+    console.log(response)
 
     let infos = [];
     const infosText = localStorage.getItem('infos');
@@ -30,6 +32,8 @@ async function location_information() {
     }
 
     const newInfo = {
+        lat: mapLatEl,
+        long: mapLonEl,
         location: locationNameEl.value,
         features: featureNameEl.value,
         notes: infoNameEl.value,
@@ -42,5 +46,5 @@ async function location_information() {
 
     localStorage.setItem('infos', JSON.stringify(infos));
 
-    window.location.href = "alldata.html";
+    // window.location.href = "alldata.html";
   }
