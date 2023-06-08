@@ -17,6 +17,7 @@ const dataCollection = db.collection('data');
 
 
   async function addData(data) {
+    console.log('addData')
     const result = await dataCollection.insertOne(data);
     return result;
   }

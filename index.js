@@ -23,8 +23,9 @@ apiRouter.get('/datas',(req, res) => {
 })
 
 apiRouter.post('/data', async (req, res) => {
-    DB.addData(req.body);
-    const datas = await DB.getData();
+    console.log(req.body)
+    const datas = await DB.addData(req.body);
+    // const datas = await DB.getData();
     res.send(datas);
   });
 

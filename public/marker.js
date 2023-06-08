@@ -21,9 +21,9 @@ async function location_information() {
     localStorage.setItem("dateName", dateNameEl.value);
 
   
-    const response = await fetch("/api/data")
+    // const response = await fetch("/api/data")
     // const temp = await response.json()
-    console.log(response)
+    // console.log(response)
 
     let infos = [];
     const infosText = localStorage.getItem('infos');
@@ -42,9 +42,15 @@ async function location_information() {
         // map_location: mapLocationNameEl
     };
 
+    const response = await fetch("/api/data", {
+      headers: {"content-type" : "application/json"},
+      body: JSON.stringify(newInfo),
+      method:"post"
+    })
+
     infos.push(newInfo);
 
     localStorage.setItem('infos', JSON.stringify(infos));
 
-    // window.location.href = "alldata.html";
+    window.location.href = "alldata.html";
   }
