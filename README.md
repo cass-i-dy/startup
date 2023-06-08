@@ -64,3 +64,9 @@ For this deliverable I created an HTTP service to host my frontend and provide b
 +**Calls to third party endpoints**- Does this through Google map API and through quotes on the about page.
 +**Backend service endpoints**- Placeholders for login that stores the current user on the server.
 +**Frontend calls service endpoints**- Did this through the fetch function. 
+
+# Data
+for this deliverable I stored and retrieved data from MongoDB.
++**MongoDB Atlas database created** - done!
++**Endpoints for data** - The endpoints now process data from the user and send it to Mongo.
++**Stores data in MongoDB** -done!

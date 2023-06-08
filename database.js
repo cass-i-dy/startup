@@ -22,11 +22,6 @@ const dataCollection = db.collection('data');
   }
 
   function getData() {
-    // const query = { score: { $gt: 0, $lt: 900 } };
-    // const options = {
-    //   sort: { createdAt: -1 },
-    //   limit: 10,
-    // };
     const cursor = dataCollection.find.toArray();
     return cursor;
   }

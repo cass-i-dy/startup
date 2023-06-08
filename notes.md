@@ -58,4 +58,3 @@ head	Header information, title	Title of the page, meta	Metadata for the page suc
 * Domain name([subdomain.]*root(secondary.top)
 * ability to route requests is called a gateway, or reverse proxy, and allows you to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).  
 
-
