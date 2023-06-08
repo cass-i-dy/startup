@@ -9,10 +9,12 @@ const dataCollection = db.collection('data');
 (async function testConnection() {
     await client.connect();
     await db.command({ ping: 1 });
+    console.log('OK')
   })().catch((ex) => {
     console.log(`Unable to connect to database with ${url} because ${ex.message}`);
     process.exit(1);
   });
+
 
   async function addData(data) {
     const result = await dataCollection.insertOne(data);
@@ -25,8 +27,8 @@ const dataCollection = db.collection('data');
     //   sort: { createdAt: -1 },
     //   limit: 10,
     // };
-    const cursor = dataCollection;
-    return cursor.toArray();
+    const cursor = dataCollection.find.toArray();
+    return cursor;
   }
 
   module.exports = { addData, getData };
