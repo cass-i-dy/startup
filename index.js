@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const DB = require('./database.js');
 const cookieParser = require('cookie-parser');
-const bcrypt = require('bycrypt');
+const bcrypt = require('bcrypt');
 
 const authCookieName = 'token';
 
