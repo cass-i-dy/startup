@@ -1,10 +1,9 @@
 // console.log("Hello World");
-
+const cookieParser = require('cookie-parser');
+const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
-const cookieParser = require('cookie-parser');
-const bcrypt = require('bcrypt');
 
 const authCookieName = 'token';
 
@@ -21,7 +20,7 @@ app.set('trust proxy', true);
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-apiRouter.post('auth/create', async (req, res) => {
+apiRouter.post('/auth/create', async (req, res) => {
   if (await DB.getUser(req.body.email)){
   res.status(409).send({msg: 'Existing user' });
   } else {
@@ -57,7 +56,7 @@ apiRouter.get('/user/:email', async (req, res) => {
   const user = await DB.getUser(req.params.email);
   if (user) {
     const token = req?.cookies.token;
-    res.send({ email: user.email, authenticated: token === user.toke });
+    res.send({ email: user.email, authenticated: token === user.token });
     return;
   }
   res.status(404).send({msg:'Unkown'});
@@ -83,8 +82,8 @@ apiRouter.get('/test',(req, res) => {
     res.send("Hello")
 })
 
-apiRouter.get('/datas',(req, res) => {
-    const datas = await.DB.getData();
+apiRouter.get('/datas', async (req, res) => {
+    const datas = await DB.getData();
     res.send(datas)
 })
 
@@ -96,7 +95,7 @@ apiRouter.post('/data', async (req, res) => {
   });
 
   app.use(function (err, req, res, next) {
-    res.status(500).send({type: err.name, message:error.message});
+    res.status(500).send({type: err.name, message:err.message});
   });
 
 

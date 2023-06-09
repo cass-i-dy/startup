@@ -13,7 +13,7 @@
 (async () => {
   const userName = localStorage.getItem('userName');
   if (userName) {
-    document.querySelector('playerName').textContent = userName;
+    document.querySelector('#playerName').textContent = userName;
     setDisplay('loginControls', 'none');
     setDisplay('playControls', 'block');
   } else {
@@ -31,15 +31,19 @@ async function createUser() {
 }
 
 async function loginOrCreate(endpoint) {
+  console.log('test1');
   const userName = document.querySelector('#userName')?.value;
   const password = document.querySelector('#userPassword')?.value;
+  console.log('test2');
   const response = await fetch(endpoint, {
     method: 'post',
     body: JSON.stringify({ email: userName, password: password }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
-    },
+    }
   });
+  console.log('test3');
+
 
   if (response.ok) {
     localStorage.setItem('userName', userName);
@@ -65,7 +69,7 @@ function logout() {
 }
 
 async function getUser(email) {
-  let scores = [];
+  let infos = [];
   // See if we have a user with the given email.
   const response = await fetch(`/api/user/${email}`);
   if (response.status === 200) {
