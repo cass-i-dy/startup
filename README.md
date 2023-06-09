@@ -70,3 +70,10 @@ for this deliverable I stored and retrieved data from MongoDB.
 + **MongoDB Atlas database created** - done!
 + **Endpoints for data** - The endpoints now process data from the user and send it to Mongo.
 + **Stores data in MongoDB** -done!
+
+## Login deliverable
+For this deliverable I added user registration adn authentication.
++ **User registration** - Creates a new account in the database
++ **Existing User** - Checks to see if a user's name and password are in the database currently
++ **Use MongoDB** - done!
++ **Restricts functionality** - You cannot continue until you have logged in since you can not be redirected to another page otherwise. 
