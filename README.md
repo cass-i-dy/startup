@@ -59,14 +59,14 @@ For this deliverable I made my application track and display the user and their 
 
 ## Service Deliverable
 For this deliverable I created an HTTP service to host my frontend and provide backend endpoints. 
-+**Node.js/Express HTTP service**- done! As seen in the newly created folders.
-+**Static middleware for frontend**- done! Can run through local host and corresponding port.
-+**Calls to third party endpoints**- Does this through Google map API and through quotes on the about page.
-+**Backend service endpoints**- Placeholders for login that stores the current user on the server.
-+**Frontend calls service endpoints**- Did this through the fetch function. 
++ **Node.js/Express HTTP service**- done! As seen in the newly created folders.
++ **Static middleware for frontend**- done! Can run through local host and corresponding port.
++ **Calls to third party endpoints**- Does this through Google map API and through quotes on the about page.
++ **Backend service endpoints**- Placeholders for login that stores the current user on the server.
++ **Frontend calls service endpoints**- Did this through the fetch function. 
 
-# Data
+## Data
 for this deliverable I stored and retrieved data from MongoDB.
-+**MongoDB Atlas database created** - done!
-+**Endpoints for data** - The endpoints now process data from the user and send it to Mongo.
-+**Stores data in MongoDB** -done!
++ **MongoDB Atlas database created** - done!
++ **Endpoints for data** - The endpoints now process data from the user and send it to Mongo.
++ **Stores data in MongoDB** -done!
