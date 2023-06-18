@@ -91,12 +91,15 @@ footer {
     background-color: rgba(13, 13, 13, 0.74);
     padding: 10px;
 }
+
+
    
   footer a {
     float: right;
     color: white;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
   }
   
   @media (max-height: 600px) {
@@ -114,5 +117,13 @@ footer {
   .anyweather {
     text-align: left;
     font-size: 15px;
+  }
+
+  .chat_button{
+    text-align: left;
+    font-size : 15px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
   }
   

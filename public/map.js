@@ -31,3 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     playerNameEl.textContent = storedUserName;
 });
+
+document.getElementById("open-chat").addEventListener("click", function() {
+    document.getElementById("chat-window").style.display = "block";
+  });
+  
+  // To close the chat window
+  document.getElementById("close-chat").addEventListener("click", function() {
+    document.getElementById("chat-window").style.display = "none";
+  });

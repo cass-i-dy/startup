@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const app = express();
 const DB = require('./database.js');
+const { weather } = require('./weather.js');
 
 const authCookieName = 'token';
 
@@ -111,7 +112,9 @@ app.use((_req, res) => {
     });
   }
   
-app.listen(port, () => {
+const httpService = app.listen(port, () => {
 console.log(`Listening on port ${port}`);
 });
 
+
+weather(httpService);
