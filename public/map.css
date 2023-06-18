@@ -119,11 +119,45 @@ footer {
     font-size: 15px;
   }
 
-  .chat_button{
+  /* .chat_button{
     text-align: left;
     font-size : 15px;
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
   }
-  
+    */
+
+    .chat-window {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      z-index: 9999;
+  }
+
+  .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 9999;
+  }  
+
+  .chat-button:focus,
+  .chat-button:hover {
+      background-color: #0056b3;
+  }
+
+  .chat-window p {
+      margin: 0;
+  }

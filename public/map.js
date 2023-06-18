@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
     playerNameEl.textContent = storedUserName;
 });
 
+
+// chat box
 document.getElementById("open-chat").addEventListener("click", function() {
     document.getElementById("chat-window").style.display = "block";
   });
