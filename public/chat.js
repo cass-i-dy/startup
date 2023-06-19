@@ -58,7 +58,7 @@ function sendMessage() {
   const msgEl = document.querySelector('#new-msg');
   const msg = msgEl.value;
   if (!!msg) {
-    appendMsg('me', 'me', msg);
+    appendMsg('me', 'me', msg, 'white-text');
     const name = document.querySelector('#my-name').value;
     socket.send(`{"name":"${name}", "msg":"${msg}"}`);
     msgEl.value = '';
