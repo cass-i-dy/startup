@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const DB = require('./database.js');
 const { weather } = require('./weather.js');
+const { WebSocketServer } = require('ws');
 
 const authCookieName = 'token';
 
@@ -117,4 +118,6 @@ console.log(`Listening on port ${port}`);
 });
 
 
-weather(httpService);
+
+
+

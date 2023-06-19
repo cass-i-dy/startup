@@ -5,9 +5,8 @@
         <meta charset="UTF-8">
         <title>TectoSlide</title>
         <p class="anyweather" id="w"></p>
-        <script src="web_socket.js"></script>
-        <link rel="stylesheet" href="map.css">
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-vfAkO7BPXdUs_xRt_DSfhqnonBSLuI"></script> -->
+        <script src="chat.js"></script>
+        <link rel="stylesheet" href="chat.css">
     </head>
 
     <body>
@@ -23,7 +22,10 @@
             <hr />
         </header>
         <main>
-            <p> Some Chat</p>
+            <h>Welcome to the Chat Area</h>
+            <input type="text" id="messageInput" placeholder="Enter message">
+            <button onclick="sendMessage()">Send</button>
+            <div id="chat-text"></div>
             <button onclick = "window.location.href = 'map.html';">Close</button>
         </main>
         <footer>
