@@ -77,3 +77,9 @@ For this deliverable I added user registration adn authentication.
 + **Existing User** - Checks to see if a user's name and password are in the database currently
 + **Use MongoDB** - done!
 + **Restricts functionality** - You cannot continue until you have logged in since you can not be redirected to another page otherwise. 
+
+## WebSocket deliverable
++ **Backend listens for WebSocket connection** - done!
++ **Frontend makes WebSocket connection** - done!
++ **Data sent over WebSocket connection** - done!
++ **WebSocket data displayed** - All users can access a chat through the map page bottom left corner and communicate to other users on the chat 
