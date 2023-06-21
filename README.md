@@ -83,3 +83,11 @@ For this deliverable I added user registration adn authentication.
 + **Frontend makes WebSocket connection** - done!
 + **Data sent over WebSocket connection** - done!
 + **WebSocket data displayed** - All users can access a chat through the map page bottom left corner and communicate to other users on the chat 
+
+## React deliverable
+For this deliverable I attempted to convert my application over to react. I was not successful in completing it, but I was able to display all of my pages, only not all of the features worked and I couldn't deploy it to my website, so I am adding screen shots from my development site
+
++ **Vundled and transpiled** - It was bundled and transpiled to the best of my ability
++ **Components** - Login is functioning, I fixed my earlier mistakes. 
++ **Router** - The websites were routing between one another. 
++ **Hooks** - only partially. I was successfull in gathering and seting the data, however I could not display it and retrieve it from the data base. 
