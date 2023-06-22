@@ -22,6 +22,9 @@ git push
 * This HTML will create a valid hyperlink <a href='https://c.com'>x</a>
 * html	The page container
 head	Header information, title	Title of the page, meta	Metadata for the page such as character set or viewport settings, script	JavaScript reference. Either a external reference, or inline, include	External content reference, body	The entire content body of the page, header	Header of the main content, footer	Footer of the main content, nav	Navigational inputs, main	Main content of the page, section	A section of the main content, aside	Aside content from the main content, div	A block division of content, span	An inline span of content h<1-9>	Text heading. From h1, the highest level, down to h9, the lowest level, p	A paragraph of text, b	Bring attention, table	Table, tr	Table row , th	Table header, td	Table data, ol,ul	Ordered or unordered list, li	List item, a	Anchor the text to a hyperlink, img	Graphical image reference, dialog	Interactive component such as a confirmation, form	A collection of user input, input	User input field, audio	Audio content, video	Video content, svg	Scalable vector graphic content, iframe	Inline frame of another HTML page
+* the component UTL '/burger' will render D
+- 1.  < BrowserRouter> < div className=' app'> < nav> < NavLink to='/'> A < /NavLink> < NavLink to= ' /burger'> C </ NavLink> < /nav>
+- 2. < main> < Routes> < Route path= '/' element={< A />}> exact /> < main> < Routes> < Route path= '/burger' element={< B />}> < main> < Routes> < Route path= '*' element={< C />}>
   
 ## CSS
 * You can use @ import url(); to load fonts from Google
@@ -47,6 +50,28 @@ head	Header information, title	Title of the page, meta	Metadata for the page suc
 * JSON provides a simple, and yet effective way, to share and store data  
 * You can convert JSON to, and from, JavaScript using the JSON.parse and JSON.stringify functions.  
 * Any function that returns an object is considered a constructor and can be invoked with the new operator.  
+* For the request [GET /fav/george paul george john is logged. 
+- 1. app.use(function(req,res,next)) console.log('paul'); next();
+- 2. app.put('fav/:person', (req,res,next) => { console.log('ringo'); next()});
+- 3. app.get('/fav/:person', (req,res,next) => {console.log(req.params.person; next())});
+- 4. app.get('/*', (req,res,next)=> {
+    console.log('john'); next();});
+- 5. app.use((_req, res) => res.send())
+* app.get('/ringo',()=>{}) will match this express middleware 
+- const r = await fetch('fav/ringo', {mehtod:'DELETE; });
+* { $or: [{name:/J.*/}, {score: {$lt:3}}}
+- {name: "Walke",socre:-55 matches this MongoDB query}
+* This code will print Client:Server:Hello
+- 1. const {WEbSocketServer } = require('ws'); const wss = new WebSocketServer({ port: 9900});
+- 2. wss.on('connection', (ws) => {ws.on('message', (data) => {const mesg = String.fromCharCode(...data); ws.send('Server:${msg}'}}))
+- 3. const socket = new WebSocket('ws://localhost:9900'); socet.onmessage = (event) => {console.log('Client:${event.data}');}
+- 4. socket.send('Hello;)
+* Component A will initially display tacofish
+- 1. const B = () => < b>burger< /b>; const C = () => < b>fish< /b>; const D = () => < b>taco< /b>;
+- 2. const A = () => { const [ v, updateV] = React.useState(false); const [ x,updateX] = REact.useState(B);}
+- 3. let o = < C />; if (v) { o = < B />;}
+- 4. React.useEffect(()=> update(D), [ v]);
+- 5. return ( < p onClick = {() => updateVtrue}>{x}{o}>)< /p>;
   
 ## Other
 * * the DOM textContent propery sets the child text for the an element
@@ -57,4 +82,17 @@ head	Header information, title	Title of the page, meta	Metadata for the page suc
 * PEM stands for Privacy Enhanced Mail and are a type of Publik Key Infrastructure file used for keys and certificates. Helps for Security
 * Domain name([subdomain.]*root(secondary.top)
 * ability to route requests is called a gateway, or reverse proxy, and allows you to expose multiple web services (i.e. your project services) as a single external web service (i.e. Caddy).  
-
+* Port 80 is reserved for HTTP
+* HTTP status codes in the 300 range are for content redirects or caching
+* Which is NOT a standard HTTP header? Language
+* Standard HTTP headers are Content-Type, Host, Cookie
+* Cookies allow for a server to store data on the client
+* Hashing stored passwords is important because it improves security by making the password unreadable
+* WEbSocket adds value to HTTP because it removes the need to keep a connection open.
+* What is Not a purpose of JSX is to combine CSS, HTML, and JavaScript
+* The purpose of JSX is to inject your HTML into your JavaScript, to componentize you HTML, and to allow for composability of your HTML
+* The command "NAMP insall ws" will not add template code for websockets to your JavaScript. 
+* The command "NPM install ws" will lock the version of the websocket package for your application, add the websocket source code to the node_modules directory, add a dependency to your package.json file
+* you can use fetch in front-end and back-end code (true)
+* Which of the following is NOT true about Linux daemon? It cannot fork other processes
+* Linux daemon can execute independent of a user, start when the computer is rebooted, PM2 is an example of daemon.

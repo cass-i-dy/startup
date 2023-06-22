@@ -20,7 +20,7 @@ useEffect(() => {
 
 function loadGoogleMapsAPI() {
     const script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=your_key';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAY-vfAkO7BPXdUs_xRt_DSfhqnonBSLuI';
     script.onload = initialize_map;
     document.head.appendChild(script);
   }
